@@ -126,22 +126,4 @@
     <script>
       // ...existing code...
     </script>
-    <script>
-      const openBtn = document.getElementById("openContactModal");
-      const modal = document.getElementById("contactModal");
-      const closeBtn = document.getElementById("closeContactModal");
-      if (openBtn && modal && closeBtn) {
-        openBtn.onclick = function (e) {
-      document.addEventListener('DOMContentLoaded', function() {
-        const openBtn = document.getElementById('openContactModal');
-        const modal = document.getElementById('contactModal');
-        const closeBtn = document.getElementById('closeContactModal');
-        if(openBtn && modal && closeBtn) {
-          openBtn.onclick = function(e) { e.preventDefault(); modal.style.display = 'flex'; };
-          closeBtn.onclick = function() { modal.style.display = 'none'; };
-          window.onclick = function(event) {
-            if(event.target === modal) { modal.style.display = 'none'; }
-          };
-        }
-      });
 </html>
