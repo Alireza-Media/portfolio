@@ -749,22 +749,45 @@ header {
     line-height: 1.4;
   }
   header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 12px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding: 10px 12px;
     min-height: 60px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   }
   .header-left {
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin-bottom: 0;
-    gap: 8px;
+    position: static;
+    left: auto;
+    top: auto;
+    gap: 6px;
     height: 48px;
-    z-index: 1001;
-    background: rgba(15, 15, 15, 0.97);
-    padding: 6px 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    align-items: center;
+    flex: 0 0 auto;
+    display: flex;
+    z-index: 1;
+  }
+  .btn-talk {
+    display: block !important;
+    position: static;
+    margin: 0 auto;
+    order: 2;
+    flex: 0 1 120px;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 1em;
+    border-radius: 6px;
+    z-index: 2;
+  }
+  .nav-toggle {
+    display: flex !important;
+    position: static;
+    order: 3;
+    flex: 0 0 40px;
+    margin-left: 0;
+    z-index: 3;
   }
   .profile-pic {
     width: 44px;
@@ -1049,9 +1072,25 @@ header {
     top: 18px;
     z-index: 201;
   }
-  .btn-talk {
-    display: none !important;
-  }
+  /*
+  mobile mood !
+   */
+.btn-talk {
+  position: fixed;
+  top: 25px;
+  left: 65%;
+  transform: translateX(-50%);
+  padding: 8px 16px;         /* reduces internal spacing */
+  font-size: 10px;           /* smaller text */
+  max-width: 80px;          /* optional limit */
+  z-index: 1000;
+  background-color: white;
+  color: var(--accent-orange);
+  border: 1px solid var(--accent-orange);
+  box-shadow: 0 2px 12px rgba(255,107,0,0.14);
+}
+
+
   .home {
     margin-top: 0px;
   }
