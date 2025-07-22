@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <script src="ms.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Alireza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Shared styles only, no custom header styles -->
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button class="lang-btn en active" onclick="window.switchLang('en')">
+        English
+      </button>
+      <button class="lang-btn fa" onclick="window.switchLang('fa')">
+        فارسی
+      </button>
+    </div>
+    <header>
+      <div class="header-left">
+        <img src="mf.png" alt="Alireza Ranjbar" class="profile-pic" />
+        <a href="index.html" style="text-decoration: none"
+          ><h2 class="logo"><span>A</span>lireza.</h2></a
+        >
+      </div>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        onclick="document.querySelector('.navigation').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+      </nav>
+      <a href="#" class="btn-talk" id="openContactModal">Let's Talk</a>
+    </header>
+    <section class="home">
+      <div class="content">
+        <h2 class="lang-en">Contact Me</h2>
+        <h2 class="lang-fa" style="display: none">تماس با من</h2>
+        <p class="lang-en">
+          Feel free to reach out for collaborations or just a friendly hello!
+        </p>
+        <p class="lang-fa" style="display: none">
+          برای همکاری یا یک سلام دوستانه با من در تماس باشید!
+        </p>
+        <div class="contact-form-box">
+          <h2 class="contact-modal-title">Leave a Message</h2>
+          <form class="contact-modal-form">
+            <div class="contact-modal-field">
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                class="contact-modal-input" />
+            </div>
+            <div class="contact-modal-field">
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                class="contact-modal-input" />
+            </div>
+            <div class="contact-modal-field">
+              <textarea
+                placeholder="Your Message"
+                required
+                class="contact-modal-textarea"></textarea>
+            </div>
+            <button type="submit" class="contact-modal-send">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="email-row">
+            <span class="email-label"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <span class="email-value" id="email"
+              >ranjbar.alireza73@gmail.com</span
+            >
+            <button class="copy-btn" onclick="window.copyEmail()">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">
+          &times;
+        </button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea
+              placeholder="Your Message"
+              required
+              class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal removed for contact page, form is now always visible above email -->
+    <script>
+      // ...existing code...
+    </script>
+    <!-- Contact modal markup only, script handled in ms.js -->
+  </body>
+</html>

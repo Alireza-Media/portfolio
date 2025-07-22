@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Alireza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="ms.js"></script>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button class="lang-btn en active" onclick="window.switchLang('en')">English</button>
+      <button class="lang-btn fa" onclick="window.switchLang('fa')">فارسی</button>
+    </div>
+    <header>
+      <div class="header-left">
+        <img src="mf.png" alt="Alireza Ranjbar" class="profile-pic" />
+        <a href="index.html" style="text-decoration: none"><h2 class="logo"><span>A</span>lireza.</h2></a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navigation').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+      </nav>
+      <a href="#" class="btn-talk" id="openContactModal">Let's Talk</a>
+    </header>
+    <section class="home">
+      <div class="content">
+        <h2 class="lang-en">My Projects</h2>
+        <h2 class="lang-fa" style="display:none">پروژه‌های من</h2>
+        <div class="project-grid">
+          <section class="project-card">
+            <div class="project-card-body">
+              <h3 class="project-title">Greenify Landing Page</h3>
+              <p class="project-desc">Designed and developed a fully responsive landing page for a fictional eco-product brand. Clean UI/UX, flexible layout, and modern design. Built with HTML, CSS (Flexbox), and vanilla JS.</p>
+              <div class="project-links">
+                <a href="Greenify/index.html" target="_blank" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Alireza-Media/portfolio/tree/main/Greenify" target="_blank" class="project-btn alt">Code</a>
+              </div>
+            </div>
+          </section>
+          <!-- Add more project-card articles here for other projects -->
+          <section class="project-card">
+            <div class="project-card-body">
+              <h3 class="project-title">FormEase Contact Form</h3>
+              <p class="project-desc">A modern, accessible contact form with live validation, smooth feedback, and a soft warm design. Built with semantic HTML, CSS, and JavaScript. Responsive and user-friendly for all devices.</p>
+              <div class="project-links">
+                <a href="FormEase/index.html" target="_blank" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Alireza-Media/portfolio/tree/main/FormEase" target="_blank" class="project-btn alt">Code</a>
+              </div>
+            </div>
+          </section>
+          <section class="project-card">
+            <div class="project-card-body">
+              <h3 class="project-title">QuoteCraft</h3>
+              <p class="project-desc">A clean, modern random quote generator with smooth fade animation and a calming color palette. Built with HTML, CSS, and JavaScript. Responsive and accessible for all devices.</p>
+              <div class="project-links">
+                <a href="QuoteCraft/index.html" target="_blank" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Alireza-Media/portfolio/tree/main/QuoteCraft" target="_blank" class="project-btn alt">Code</a>
+              </div>
+            </div>
+          </section>
+          <section class="project-card">
+            <div class="project-card-body">
+              <h3 class="project-title">TaskZen To-Do App</h3>
+              <p class="project-desc">A modern, responsive to-do list app with dark mode, smooth UI, and interactive features. Add, complete, and delete tasks with ease. Built with HTML, CSS, and JavaScript—no backend required.</p>
+              <div class="project-links">
+                <a href="TaskZen/index.html" target="_blank" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Alireza-Media/portfolio/tree/main/TaskZen" target="_blank" class="project-btn alt">Code</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">&times;</button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input type="text" placeholder="Your Name" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input type="email" placeholder="Your Email" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea placeholder="Your Message" required class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // ...existing code...
+    </script>
+  </body>
+</html>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">
+          &times;
+        </button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea
+              placeholder="Your Message"
+              required
+              class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // ...existing code...
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const openBtn = document.getElementById("openContactModal");
+        const modal = document.getElementById("contactModal");
+        const closeBtn = document.getElementById("closeContactModal");
+        if (openBtn && modal && closeBtn) {
+          openBtn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+          };
+          closeBtn.onclick = function () {
+            modal.style.display = "none";
+          };
+          window.onclick = function (event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          };
+        }
+      });
+    </script>
+  </body>
+</html>

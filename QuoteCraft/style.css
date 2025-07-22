@@ -1,0 +1,97 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f5f7fa 60%, #dbeafe 100%);
+  color: #222;
+}
+.quotecraft-container {
+  max-width: 480px;
+  margin: 48px auto 0 auto;
+  padding: 32px 18px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quotecraft-title {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 24px;
+}
+.quote-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 100%;
+  transition: box-shadow 0.2s, opacity 0.4s;
+  opacity: 1;
+  min-height: 120px;
+}
+.quote-text {
+  font-size: 1.35em;
+  color: #222;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.quote-author {
+  color: #2563eb;
+  font-size: 1.08em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.quote-btn {
+  display: block;
+  margin: 0 auto 18px auto;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 1.08em;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.quote-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.18);
+  transform: scale(1.04);
+}
+.quotecraft-credit {
+  text-align: center;
+  color: #888;
+  font-size: 0.98em;
+  margin-top: 18px;
+}
+@media (max-width: 600px) {
+  .quotecraft-container {
+    max-width: 98vw;
+    padding: 18px 6px;
+  }
+  .quote-card {
+    padding: 18px 10px;
+    font-size: 1em;
+  }
+  .quote-text {
+    font-size: 1.08em;
+  }
+  .quote-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

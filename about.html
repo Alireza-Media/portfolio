@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="ms.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Alireza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Removed all inline styles, now in style.css -->
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button class="lang-btn en active" onclick="window.switchLang('en')">
+        English
+      </button>
+      <button class="lang-btn fa" onclick="window.switchLang('fa')">
+        فارسی
+      </button>
+    </div>
+    <header>
+      <div class="header-left">
+        <img src="mf.png" alt="Alireza Ranjbar" class="profile-pic" />
+        <a href="index.html" style="text-decoration: none"><h2 class="logo"><span>A</span>lireza.</h2></a>
+      </div>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        onclick="document.querySelector('.navigation').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+      </nav>
+      <a href="#" class="btn-talk" id="openContactModal">Let's Talk</a>
+    </header>
+    <section class="about">
+      <div class="about-content">
+        <h2 class="lang-en">About Me</h2>
+        <h2 class="lang-fa" style="display: none">درباره من</h2>
+        <p class="lang-en">
+          Hi, I'm Alireza Amin-Ranjbar—a passionate coder, data analyst, and web
+          developer. My journey began in engineering, where I earned a Master’s
+          in Construction Engineering and Management and published research in
+          top journals. I’ve built advanced data analysis tools, automated
+          workflows, and delivered actionable insights for real-world projects
+          using VBA and Python.
+        </p>
+        <p class="lang-fa" style="display: none">
+          سلام، من علیرضا امین‌رنجبر هستم — برنامه‌نویس، تحلیل‌گر داده و
+          توسعه‌دهنده وب. مسیر من از مهندسی آغاز شد، جایی که مدرک کارشناسی ارشد
+          مدیریت ساخت گرفتم و مقالات علمی منتشر کردم. ابزارهای پیشرفته تحلیل
+          داده، اتوماسیون فرآیندها و ارائه بینش‌های عملی برای پروژه‌های واقعی با
+          VBA و پایتون را ساخته‌ام.
+        </p>
+        <p class="lang-en">
+          My expertise spans digital engineering, risk analysis, and sustainable
+          design, but my true strength lies in solving problems with code.
+          Whether extracting data from BIM models, running Monte Carlo
+          simulations, or building modern web experiences, I thrive on turning
+          complex challenges into elegant solutions.
+        </p>
+        <p class="lang-fa" style="display: none">
+          تخصص من شامل مهندسی دیجیتال، تحلیل ریسک و طراحی پایدار است، اما نقطه
+          قوت اصلی من حل مسائل با کدنویسی است. چه استخراج داده از مدل‌های BIM،
+          چه اجرای شبیه‌سازی مونت‌کارلو یا ساخت تجربه‌های مدرن وب، از تبدیل
+          چالش‌های پیچیده به راه‌حل‌های ساده لذت می‌برم.
+        </p>
+        <p class="lang-en">
+          Today, I’m focused on web development—bringing together my analytical
+          mindset and creative energy to craft impactful digital products. Let’s
+          build something amazing together!
+        </p>
+        <p class="lang-fa" style="display: none">
+          امروز تمرکز من بر توسعه وب است — ترکیب ذهن تحلیلی و انرژی خلاق برای
+          ساخت محصولات دیجیتال تاثیرگذار. بیایید با هم چیزی فوق‌العاده بسازیم!
+        </p>
+      </div>
+    </section>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">&times;</button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input type="text" placeholder="Your Name" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input type="email" placeholder="Your Email" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea placeholder="Your Message" required class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">&times;</button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input type="text" placeholder="Your Name" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input type="email" placeholder="Your Email" required class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea placeholder="Your Message" required class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // ...existing code...
+    </script>
+    <script>
+      const openBtn = document.getElementById("openContactModal");
+      const modal = document.getElementById("contactModal");
+      const closeBtn = document.getElementById("closeContactModal");
+      if (openBtn && modal && closeBtn) {
+        openBtn.onclick = function (e) {
+      document.addEventListener('DOMContentLoaded', function() {
+        const openBtn = document.getElementById('openContactModal');
+        const modal = document.getElementById('contactModal');
+        const closeBtn = document.getElementById('closeContactModal');
+        if(openBtn && modal && closeBtn) {
+          openBtn.onclick = function(e) { e.preventDefault(); modal.style.display = 'flex'; };
+          closeBtn.onclick = function() { modal.style.display = 'none'; };
+          window.onclick = function(event) {
+            if(event.target === modal) { modal.style.display = 'none'; }
+          };
+        }
+      });
+</html>

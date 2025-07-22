@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Alireza Amin-Ranjbar, Frontend Web Developer specializing in HTML, CSS, JavaScript, and Python." />
+    <meta
+      name="keywords"
+      content="Alireza Amin Ranjbar,HTML, CSS, JavaScript, Web Developer, Alireza, Frontend, Portfolio" />
+    <title>Web Dev - Alireza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="ms.js"></script>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button class="lang-btn en active" onclick="window.switchLang('en')">
+        English
+      </button>
+      <button class="lang-btn fa" onclick="window.switchLang('fa')">
+        فارسی
+      </button>
+    </div>
+    <header>
+      <div class="header-left">
+        <img src="mf.png" alt="Alireza Ranjbar" class="profile-pic" />
+        <a href="index.html" style="text-decoration: none"
+          ><h2 class="logo"><span>A</span>lireza.</h2></a
+        >
+      </div>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        onclick="document.querySelector('.navigation').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="About.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="#" class="btn-talk" id="openContactModal">Let's Talk</a>
+    </header>
+
+    <section class="home">
+      <div class="content">
+        <h2 class="lang-en">
+          Hi, I'm <span>A</span>lireza <span>A</span>min-Ranjbar
+        </h2>
+        <h2 class="lang-fa" style="display: none">
+          سلام، من <span>علیرضا</span> <span>امین‌رنجبر</span> هستم
+        </h2>
+        <h4 class="lang-en">
+          <span style="color: #ff6b00">Frontend Developer</span> &
+          <span style="color: #ff6b00">Data Engineer</span>
+        </h4>
+        <h4 class="lang-fa" style="display: none">توسعه‌دهنده فرانت‌اند</h4>
+        <p class="lang-en">
+          Welcome to my portfolio! I'm passionate about building beautiful,
+          responsive websites and solving real-world problems with code. Whether
+          you're looking for a creative frontend developer or a data-driven
+          thinker, I'm here to help you bring your ideas to life. Let's create
+          something amazing together!
+        </p>
+        <p class="lang-fa" style="display: none">
+          به نمونه‌کار من خوش آمدید! من عاشق ساخت وب‌سایت‌های زیبا و حل مسائل
+          واقعی با کدنویسی هستم. اگر به دنبال یک توسعه‌دهنده خلاق یا فردی با ذهن
+          داده‌محور هستید، اینجا هستم تا ایده‌های شما را به واقعیت تبدیل کنم.
+          بیایید با هم چیزی فوق‌العاده بسازیم!
+        </p>
+        <div class="btn-group">
+          <a href="portfolio.html" class="lang-en see-projects-btn"
+            >See Projects</a
+          >
+          <a href="portfolio.html#fa" class="lang-fa see-projects-btn"
+            >مشاهده پروژه‌ها</a
+          >
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+    <div id="contactModal" class="contact-modal">
+      <div class="contact-modal-content">
+        <button id="closeContactModal" class="contact-modal-close">
+          &times;
+        </button>
+        <h2 class="contact-modal-title">Leave a Message</h2>
+        <form class="contact-modal-form">
+          <div class="contact-modal-field">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              class="contact-modal-input" />
+          </div>
+          <div class="contact-modal-field">
+            <textarea
+              placeholder="Your Message"
+              required
+              class="contact-modal-textarea"></textarea>
+          </div>
+          <button type="submit" class="contact-modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+
+    <script>
+      // ...existing code...
+    </script>
+  </body>
+</html>
