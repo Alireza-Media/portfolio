@@ -941,7 +941,7 @@ header {
     padding: 6px 10px;
   }
   .btn-talk {
-    right: 8px;
+    right: 45px;
     top: 8px;
   }
 }
@@ -1056,7 +1056,9 @@ header {
   background-color: var(--white);
   color: var(--accent-orange);
 }
-
+ /*
+  mobile mood !
+   */
 @media (max-width: 900px) {
   .content, .about-content {
     max-width: 100vw;
@@ -1072,9 +1074,7 @@ header {
     top: 18px;
     z-index: 201;
   }
-  /*
-  mobile mood !
-   */
+ 
 .btn-talk {
   position: fixed;
   top: 25px;
