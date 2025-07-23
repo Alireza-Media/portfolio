@@ -1176,7 +1176,7 @@ header {
   box-shadow: 0 5px 12px rgba(255,107,0,0.14);
 }
 .email-label {
-  font-size: 0.7em;
+  font-size: 0.6em;
   margin-right: 3px;
   padding: 6px 6px;
   color: var(--accent-orange);
@@ -1184,7 +1184,7 @@ header {
 .email-value {
   font-weight: 400;
   padding: 1px 1px;
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-family: 'Poppins';
 }
 .copy-btn {
@@ -1193,7 +1193,7 @@ header {
   border: none;
   border-radius: 6px;
   padding: 6px 14px;
-  font-size: 0.5em;
+  font-size: 0.4em;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(255,107,0,0.10);
   transition: background 0.2s, color 0.2s;
