@@ -300,18 +300,21 @@ header {
 .email-row {
   padding: 15px 10px;
   font-size: 1em;
-  background: #181818;
-  color: var(--accent-orange);
-  border: 0.5px solid var(--accent-orange);
+  /* background: #222; */
+  color: white;
+  border: 1px solid var(--accent-orange);
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(255,107,0,0.14);
 }
 .email-label {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-right: 3px;
+  padding: 6px 6px;
+  color: var(--accent-orange);
 }
 .email-value {
-  padding: 2px 6px;
+  font-weight: 700;
+  padding: 2px 2px;
   font-size: 0.9em;
   font-family: 'Poppins';
 }
@@ -321,7 +324,7 @@ header {
   border: none;
   border-radius: 6px;
   padding: 6px 14px;
-  font-size: 1em;
+  font-size: 0.8em;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(255,107,0,0.10);
   transition: background 0.2s, color 0.2s;
@@ -866,8 +869,9 @@ header {
     box-shadow: 0 2px 12px rgba(255,107,0,0.14);
   }
   .email-label {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-right: 3px;
+    color: var(--accent-orange);
   }
   .email-value {
     padding: 2px 6px;
