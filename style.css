@@ -300,14 +300,13 @@ header {
 .email-row {
   padding: 15px 10px;
   font-size: 1em;
-  /* background: #222; */
   color: white;
   border: 1px solid var(--accent-orange);
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(255,107,0,0.14);
 }
 .email-label {
-  font-size: 1.3em;
+  font-size: 1em;
   margin-right: 3px;
   padding: 6px 6px;
   color: var(--accent-orange);
@@ -1164,6 +1163,45 @@ header {
     color: var(--white) !important;
     border: 2px solid var(--accent-orange);
   }
+  .contact-info {
+  gap: 7px;
+  padding: 20px 1px;
+}
+  .email-row {
+  padding: 5px 5px;
+  font-size: 1.2em;
+  color: white;
+  border: 1px solid var(--accent-orange);
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(255,107,0,0.14);
+}
+.email-label {
+  font-size: 0.7em;
+  margin-right: 3px;
+  padding: 6px 6px;
+  color: var(--accent-orange);
+}
+.email-value {
+  font-weight: 400;
+  padding: 1px 1px;
+  font-size: 0.6em;
+  font-family: 'Poppins';
+}
+.copy-btn {
+  background: var(--accent-orange);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,107,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.copy-btn:hover {
+  background: var(--white);
+  color: var(--accent-orange);
+}
 }
 
 /* Hamburger menu styles */
