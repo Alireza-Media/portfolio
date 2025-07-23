@@ -1194,7 +1194,7 @@ header {
   border: none;
   border-radius: 6px;
   padding: 4px 8px;
-  font-size: 0.5em;
+  font-size: 0.6em;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(255,107,0,0.10);
   transition: background 0.2s, color 0.2s;
