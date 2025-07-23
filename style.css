@@ -300,13 +300,14 @@ header {
 .email-row {
   padding: 15px 10px;
   font-size: 1em;
+  /* background: #222; */
   color: white;
   border: 1px solid var(--accent-orange);
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(255,107,0,0.14);
 }
 .email-label {
-  font-size: 1em;
+  font-size: 1.3em;
   margin-right: 3px;
   padding: 6px 6px;
   color: var(--accent-orange);
