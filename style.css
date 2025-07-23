@@ -1169,21 +1169,21 @@ header {
   padding: 20px 1px;
 }
   .email-row {
-  padding: 5px 5px;
-  font-size: 1em;
+  padding: 15px 15px;
+  font-size: 1.1em;
   color: white;
   border: 1px solid var(--accent-orange);
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(255,107,0,0.14);
 }
 .email-label {
-  font-size: 0.7em;
-  margin-right: 3px;
-  padding: 6px 6px;
+  font-size: 0.8em;
+  margin-right: 0px;
+  padding: 1px 1px;
   color: var(--accent-orange);
 }
 .email-value {
-  font-weight: 400;
+  font-weight: 500;
   padding: 1px 1px;
   font-size: 0.7em;
   font-family: 'Poppins';
@@ -1193,7 +1193,7 @@ header {
   color: var(--white);
   border: none;
   border-radius: 6px;
-  padding: 6px 14px;
+  padding: 4px 8px;
   font-size: 0.5em;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(255,107,0,0.10);
