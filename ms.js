@@ -134,3 +134,34 @@ document.addEventListener("DOMContentLoaded", function () {
     window.switchLang(hashLang);
   }
 });
+
+// --- EmailJS Integration for All Contact Forms ---
+(function () {
+  // Load EmailJS if not already loaded
+  if (typeof emailjs === 'undefined') {
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js';
+    script.onload = initEmailJS;
+    document.head.appendChild(script);
+  } else {
+    initEmailJS();
+  }
+
+  function initEmailJS() {
+    emailjs.init('BbW3Bb4Nxm31dJ6JG');
+    var forms = document.querySelectorAll('.contact-modal-form');
+    forms.forEach(function(form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        emailjs.sendForm('service_qvhy88s', 'template_raerb7f', form)
+          .then(function () {
+            alert('Your message was sent successfully!');
+            form.reset();
+          }, function (error) {
+            alert('Failed to send message. Please try again.');
+          });
+      });
+    });
+  }
+})();
+// --- End EmailJS Integration ---
