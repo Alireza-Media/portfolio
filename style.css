@@ -1107,7 +1107,7 @@ header {
   }
   .header-left {
     gap: 6px;
-    height: 65px;
+    height: 60px;
     align-items: center;
   }
   .profile-pic {
