@@ -65,6 +65,23 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks[3].textContent = "Portfolio";
       }
       updateLanguageVisibility('en');
+  // Show a message when the CV download button is clicked
+  var cvBtn = document.querySelector('.about-cv-download .project-btn');
+  if (cvBtn) {
+    cvBtn.addEventListener('click', function (e) {
+      // Remove any existing message
+      var oldMsg = document.getElementById('cv-download-msg');
+      if (oldMsg) oldMsg.remove();
+      // Create and show the message
+      var msg = document.createElement('div');
+      msg.id = 'cv-download-msg';
+      msg.textContent = 'Your download has started!';
+      msg.style.cssText = 'margin-top:18px; color:#ff6b00; font-weight:600; font-size:1.1em; text-align:center;';
+      cvBtn.parentNode.appendChild(msg);
+      // Hide after 3 seconds
+      setTimeout(function () { msg.remove(); }, 3000);
+    });
+  }
       // Update language button states
       const btnEn = document.querySelector(".lang-btn.en");
       const btnFa = document.querySelector(".lang-btn.fa");
