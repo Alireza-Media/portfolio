@@ -1106,8 +1106,11 @@ header {
     box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   }
   .header-left {
+    left: 8px;
+    top: 8px;
+    padding: 6px 10px;
     gap: 6px;
-    height: 60px;
+    height: 55px;
     align-items: center;
   }
   .profile-pic {
